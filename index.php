@@ -47,3 +47,10 @@ usort($archivos, function($a, $b) {
         <?php
             // Sacamos solo el número: "a3.php" → 3
             $num = in
+tval(substr($archivo, 1, -4));
+        ?>
+        <li><a href="<?php echo htmlspecialchars($archivo); ?>">Actividad <?php echo $num; ?></a></li>
+    <?php endforeach; ?>
+</ul>
+</body>
+</html> 
