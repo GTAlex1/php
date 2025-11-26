@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 8</title>
-</head>
-<body>
-    <?php
-        $nota = 8;
-        $color = "";
-        if ($nota <=4) {
-            $color = "red";
-        }else if ($nota <=6) {
-            $color = "yellow";
-        }else if ($nota <=8) {
-            $color = "green";
-        }else { $color = "blue";
-        } 
-    ?>
-    <h1 style="color: <?php echo $color; ?>">Tu nota es: <?php echo $nota; ?></h1>
-</body>
-</html>
+<?php
+$nota = 8.4;          // Nota original
+$comportamiento = 1;  // Valor entre 0 y 2
+
+// Restamos comportamiento
+$notaFinal = $nota - $comportamiento;
+
+// Clasificación según la nota final
+if ($notaFinal < 5) {
+    $calificacion = "Suspenso";
+} elseif ($notaFinal < 7) {
+    $calificacion = "Aprobado";
+} elseif ($notaFinal < 9) {
+    $calificacion = "Notable";
+} else {
+    $calificacion = "Sobresaliente";
+}
+
+echo "Calificación: $calificacion ($notaFinal)";
+?>
