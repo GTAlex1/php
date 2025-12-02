@@ -1,6 +1,6 @@
 <?php
 // Buscar archivos tipo a1.php, a2.php...
-$archivos = glob("a*.php"); 
+$archivos = glob("f/a*.php"); 
 
 // Ordenar por número (a1, a2, a3...)
 usort($archivos, function($a, $b) {
