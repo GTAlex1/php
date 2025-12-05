@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.4-apache
 
 # Copiar todos los archivos del repo al servidor web
 COPY . /var/www/html/
